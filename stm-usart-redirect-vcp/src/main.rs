@@ -25,7 +25,7 @@ fn main() -> ! {
 
     let dp = pac::Peripherals::take().unwrap();
 
-    // Configure GPIOA for USART3 (PD8 and PD9)
+    // Configure GPIO for USART3 (PC10)
     let _tx_pin = Pin::new(Port::C, 10, PinMode::Alt(7));
 
     // Configure USART3 with default settings
